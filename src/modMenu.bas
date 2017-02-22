@@ -94,3 +94,15 @@ Private Sub RemoveVBEMenu()
     On Error GoTo 0
 
 End Sub
+
+'// RibUI callbacks
+Public Sub btnMakeConfig_onAction(control As IRibbonControl)
+    Call MakeConfigFile
+End Sub
+Public Sub btnExport_onAction(control As IRibbonControl)
+    Call Export
+End Sub
+Public Sub btnImport_onAction(control As IRibbonControl)
+    Call Import
+End Sub
+
