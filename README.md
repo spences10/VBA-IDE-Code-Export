@@ -49,8 +49,8 @@ The `Export` button in the `Export For VCS` menu will:
 
 ## Building
 
-1. Open the template file `VBA-IDE-Code-Export.xlsm`.
-2. Import the files specified in `CodeExport.config.json` (Tip: Use a previously installed copy of this Add-In).
+1. Open the template file `src/VBA-IDE-Code-Export.xlsm`.
+2. Import the files specified in `src/CodeExport.config.json` (Tip: Use a previously installed copy of this Add-In).
 3. Compile project as a smoke test.
 5. Save as an Add-In.
 
