@@ -25,7 +25,6 @@
 <!-- /TOC -->
 
 ## Intro
----
 
 Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon.
 
@@ -34,7 +33,6 @@ For a while now I have used this code so that all the associated VBA files used 
 This is specifically for Excel, although the VBIDE extensibility can be used for all the MS Office suite.
 
 ## Installing
----
 
 1. [Download](https://github.com/spences10/VBA-IDE-Code-Export/releases) the Add-In or Add-In Workbook.
 2. Put the add-in into your add-ins folder. The easiest way to do this is to open the Add-In workbook (.xlsm file) and save it as an Add-In. Excel will automatically direct you to the correct folder.
@@ -42,7 +40,6 @@ This is specifically for Excel, although the VBIDE extensibility can be used for
 4. Check the `Trust access to the VBA project model` check box located in `Trust Centre -> Trust Centre Settings -> Macro Settings -> Trust access to the VBA project model`.
 
 ## Build from source
----
 
 ### Clone the repo
 
@@ -65,7 +62,6 @@ Multi select the contents of the folder **_excluding `VBA-IDE-Code-Export.packag
 Save, Debug>Compile the project then from the Immeditate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **useage.**
 
 ## Usage
----
 
 The add-in will create a menu in the VBA IDE (the VBE) called `Export for VCS`. All controls for the add-in are found in this menu.
 
@@ -96,7 +92,6 @@ The `Export` button in the `Export For VCS` menu will:
 * Remove library references from the project which are declared in the configuration file.
 
 ## Contributing
----
 
 Please fork this repository and contribute back using pull requests.
 
@@ -105,7 +100,7 @@ Any contributions, large or small, major features, bugfixes and integration test
 Please use the template file `VBA-IDE-Code-Export.xlsm` for working in, however don't commit the template file unless you are actually making a change to the template file. This helps with source control since merging an Excel file is not fun.
 
 ## Roadmap
----
 
 - [x] Add pretty ribbon UI
 - [ ] Save XL as XML
+- [ ] Command line interface
