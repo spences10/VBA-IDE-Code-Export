@@ -49,7 +49,7 @@ Clone the repo `git clone https://github.com/spences10/VBA-IDE-Code-Export`, nav
 
 All you need to do to build the binary is create an empty `.zip` file, name it `VBA-IDE-Code-Export` then open the empty `.zip` and drag and drop the **_contents_** of the `VBA-IDE-Code-Export.package` folder into the `.zip` file.
 
->Now [I'm assuming you're on windows] if you have the Folder Options setting for `Hide extensions for known filetypes` checked then this is the time to uncheck it.
+>Now [I'm assuming you're on windows] if you have the Folder Options setting for `Hide extensions for known file types` checked then this is the time to uncheck it.
 
 Rename the file extension on the newly created `VBA-IDE-Code-Export.zip` file from `.zip` to `.xlsm` acknowledge the dialog saying `if you change the extension bad things might happen` and you will have the binary ready to add the code to.
 
@@ -59,7 +59,7 @@ Best way to do this, have the `VBA-IDE-Code-Export.xlsm` VBA IDE open in one win
 
 Multi select the contents of the folder **_excluding `VBA-IDE-Code-Export.package` and `CodeExport.config.json`_** drag and drop into the `VBA-IDE-Code-Export.xlsm` VBA IDE.
 
-Save, Debug>Compile the project then from the Immeditate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **useage.**
+Save, Debug>Compile the project then from the Immediate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **usage.**
 
 ## Usage
 
