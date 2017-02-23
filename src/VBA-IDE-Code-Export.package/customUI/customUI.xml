@@ -1,0 +1,34 @@
+<customUI  xmlns="http://schemas.microsoft.com/office/2006/01/customui" >
+	<ribbon >
+		<tabs >
+			<tab  idMso="TabDeveloper" >
+				<group 
+					id="codeExport"
+					label="Code Export">
+					<button 
+						description="Make json config file"
+						id="btnMakeConfig"
+						imageMso="FilePrepareMenu"
+						label="Make Config File"
+						size="large"
+						onAction="btnMakeConfig_onAction"/>
+					<button 
+						description="Export code"
+						id="btnExport"
+						imageMso="ExportTextFile"
+						label="Export Code"
+						size="large"
+						onAction="btnExport_onAction"/>
+					<button 
+						description="Import code"
+						id="btnImport"
+						imageMso="ImportTextFile"
+						label="Import Code"
+						size="large"
+						onAction="btnImport_onAction"/>
+				</group >
+			</tab >
+		</tabs >
+	</ribbon >
+</customUI >
+
