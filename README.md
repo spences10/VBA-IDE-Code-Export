@@ -6,18 +6,66 @@
 
 [![Throughput Graph](https://graphs.waffle.io/spences10/VBA-IDE-Code-Export/throughput.svg)](https://waffle.io/spences10/VBA-IDE-Code-Export/metrics/throughput)
 
-For a while now I have used this code so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be easily exported for use with a Version Control System.
+<!-- TOC -->
+
+- [VBA IDE CodeExport](#vba-ide-codeexport)
+  - [Intro](#intro)
+  - [Installing](#installing)
+  - [Build from source](#build-from-source)
+    - [Clone the repo](#clone-the-repo)
+    - [Build the binary](#build-the-binary)
+    - [Add the code](#add-the-code)
+  - [Usage](#usage)
+    - [The configuration file](#the-configuration-file)
+    - [Importing](#importing)
+    - [Exporting](#exporting)
+  - [Contributing](#contributing)
+  - [Roadmap](#roadmap)
+
+<!-- /TOC -->
+
+## Intro
+---
+
+Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon.
+
+For a while now I have used this code so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
 
 This is specifically for Excel, although the VBIDE extensibility can be used for all the MS Office suite.
 
 ## Installing
+---
 
 1. [Download](https://github.com/spences10/VBA-IDE-Code-Export/releases) the Add-In or Add-In Workbook.
 2. Put the add-in into your add-ins folder. The easiest way to do this is to open the Add-In workbook (.xlsm file) and save it as an Add-In. Excel will automatically direct you to the correct folder.
 3. Enable the add-in in Excel.
 4. Check the `Trust access to the VBA project model` check box located in `Trust Centre -> Trust Centre Settings -> Macro Settings -> Trust access to the VBA project model`.
 
+## Build from source
+---
+
+### Clone the repo
+
+Clone the repo `git clone https://github.com/spences10/VBA-IDE-Code-Export`, navigate to where you have cloned the code to, there you will find the `VBA-IDE-Code-Export.package` folder this is the 'unpacked' version of the VBA-IDE-Code-Export Excel `.xlsm` binary.
+
+### Build the binary
+
+All you need to do to build the binary is create an empty `.zip` file, name it `VBA-IDE-Code-Export` then open the empty `.zip` and drag and drop the **_contents_** of the `VBA-IDE-Code-Export.package` folder into the `.zip` file.
+
+>Now [I'm assuming you're on windows] if you have the Folder Options setting for `Hide extensions for known filetypes` checked then this is the time to uncheck it.
+
+Rename the file extension on the newly created `VBA-IDE-Code-Export.zip` file from `.zip` to `.xlsm` acknowledge the dialog saying `if you change the extension bad things might happen` and you will have the binary ready to add the code to.
+
+### Add the code
+
+Best way to do this, have the `VBA-IDE-Code-Export.xlsm` VBA IDE open in one window then the file explorer open at the `src` folder in another window.
+
+Multi select the contents of the folder **_excluding `VBA-IDE-Code-Export.package` and `CodeExport.config.json`_** drag and drop into the `VBA-IDE-Code-Export.xlsm` VBA IDE.
+
+Save, Debug>Compile the project then from the Immeditate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **useage.**
+
 ## Usage
+---
 
 The add-in will create a menu in the VBA IDE (the VBE) called `Export for VCS`. All controls for the add-in are found in this menu.
 
@@ -47,14 +95,9 @@ The `Export` button in the `Export For VCS` menu will:
 * Export all the modules specified in the configuration file from the Excel file into the appropriate places in the file system. Existing files will be overwritten.
 * Remove library references from the project which are declared in the configuration file.
 
-## Building
-
-1. Open the template file `VBA-IDE-Code-Export.xlsm`.
-2. Import the files specified in `CodeExport.config.json` (Tip: Use a previously installed copy of this Add-In).
-3. Compile project as a smoke test.
-5. Save as an Add-In.
-
 ## Contributing
+---
+
 Please fork this repository and contribute back using pull requests.
 
 Any contributions, large or small, major features, bugfixes and integration tests are welcomed and appreciated but will be thoroughly reviewed and discussed.
@@ -62,6 +105,7 @@ Any contributions, large or small, major features, bugfixes and integration test
 Please use the template file `VBA-IDE-Code-Export.xlsm` for working in, however don't commit the template file unless you are actually making a change to the template file. This helps with source control since merging an Excel file is not fun.
 
 ## Roadmap
+---
 
-- [ ] Add pretty ribbon UI
+- [x] Add pretty ribbon UI
 - [ ] Save XL as XML
