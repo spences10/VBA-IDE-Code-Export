@@ -51,7 +51,11 @@ All you need to do to build the binary is create an empty `.zip` file, name it `
 
 >Now [I'm assuming you're on windows] if you have the Folder Options setting for `Hide extensions for known file types` checked then this is the time to uncheck it.
 
+![](/img/unhide-file-extensions.gif)
+
 Rename the file extension on the newly created `VBA-IDE-Code-Export.zip` file from `.zip` to `.xlsm` acknowledge the dialog saying `if you change the extension bad things might happen` and you will have the binary ready to add the code to.
+
+![](/img/build-from-source.gif)
 
 ### Add the code
 
@@ -59,7 +63,14 @@ Best way to do this, have the `VBA-IDE-Code-Export.xlsm` VBA IDE open in one win
 
 Multi select the contents of the folder **_excluding `VBA-IDE-Code-Export.package` and `CodeExport.config.json`_** drag and drop into the `VBA-IDE-Code-Export.xlsm` VBA IDE.
 
+Add in the following references: 
+
+1. Microsoft Scripting Runtime
+2. Microsoft Visual Basic for Applications Extensibility 5.3
+
 Save, Debug>Compile the project then from the Immediate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **usage.**
+
+![](/img/add-code.gif)
 
 ## Usage
 
@@ -82,7 +93,6 @@ The `Import` button in the `Export For VCS` menu will:
 * Import all the modules specified in the configuration file from the file system into the Excel file. Existing modules will be overwritten.
 * Add all library references declared in the configuration file. Existing library references will be overwritten.
 * Set the VBAProject name as declared in the configuration file.
-
 
 ### Exporting
 
