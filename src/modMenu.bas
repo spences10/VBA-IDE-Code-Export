@@ -105,4 +105,7 @@ End Sub
 Public Sub btnImport_onAction(control As IRibbonControl)
     Call Import
 End Sub
+Public Sub btnXlToXML_onAction(control As IRibbonControl)
+
+End Sub
 
