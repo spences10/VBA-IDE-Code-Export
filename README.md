@@ -26,9 +26,9 @@
 
 ## Intro
 
-Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon.
+Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon, a pure VBA add-in for code export, no need to install a COM add-in
 
-For a while now I have used this code so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
+Use this code so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
 
 This is specifically for Excel, although the VBIDE extensibility can be used for all the MS Office suite.
 
@@ -105,7 +105,6 @@ Save, Debug>Compile the project then from the Immediate pane in the VBA IDE ente
 
 ![](/img/add-code.gif)
 
-
 ## Contributing
 
 Please fork this repository and contribute back using pull requests.
@@ -117,5 +116,5 @@ Please use the template file `VBA-IDE-Code-Export.xlsm` for working in, however 
 ## Roadmap
 
 - [x] Add pretty ribbon UI
-- [ ] Save XL as XML
+- [x] Save XL as XML
 - [ ] Command line interface
