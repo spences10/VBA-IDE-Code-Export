@@ -98,6 +98,8 @@ Add in the following references:
 
 1. Microsoft Scripting Runtime
 2. Microsoft Visual Basic for Applications Extensibility 5.3
+3. Windows Script Host Object Model
+4. Microsoft Shell Controls And Automation
 
 Save, Debug>Compile the project then from the Immediate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **usage.**
 
