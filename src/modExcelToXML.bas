@@ -4,20 +4,26 @@ Option Explicit
 Const ms As Double = 0.000000011574
 
 Sub excelToXML()
+
+    Dim strWorkbookPath As String
+    Dim strWorkbookName As String
+    Dim fso As New FileSystemObject
     
-    If Not changeFileExtension(ThisWorkbook.Path, ThisWorkbook.Name) Then
-            
-    End If
-        
-    If Not windowsUnZip(Left(ThisWorkbook.FullName, Len(ThisWorkbook.FullName) - 4) & "zip", ThisWorkbook.Path) Then
+    strWorkbookPath = ActiveWorkbook.Path
+    strWorkbookName = ActiveWorkbook.Name
     
+    If Not windowsUnZip(changeFileExtension(strWorkbookPath, strWorkbookName), strWorkbookPath) Then
+        If HandleCrash(Err.Number, Err.Description, Err.Source) Then
+            Stop
+            Resume
+        End If
     End If
         
 End Sub
 
-Function changeFileExtension(strPath As String, strFileName As String) As Boolean
+Function changeFileExtension(strPath As String, strFileName As String) As String
     
-    Dim FSO As New FileSystemObject
+    Dim fso As New FileSystemObject
     Dim strBaseName As String
     Dim strExtension As String
 
@@ -27,18 +33,18 @@ Function changeFileExtension(strPath As String, strFileName As String) As Boolea
         strPath = strPath & Application.PathSeparator
     End If
     
-    strBaseName = FSO.GetBaseName(strPath & strFileName)
-    strExtension = FSO.GetExtensionName(strPath & strFileName)
+    strBaseName = fso.GetBaseName(strPath & strFileName)
+    strExtension = fso.GetExtensionName(strPath & strFileName)
     
-    Call FSO.CopyFile(strPath & strFileName, strPath & strBaseName & ".zip")
+    Call fso.CopyFile(strPath & strFileName, strPath & strBaseName & ".zip")
     
-    changeFileExtension = True
+    changeFileExtension = strPath & strBaseName & ".zip"
 
 Exit Function
 
 errHandler:
         
-    changeFileExtension = False
+    changeFileExtension = ""
     
 End Function
 
@@ -47,19 +53,16 @@ Function windowsUnZip(strUnzipFullPath, strUnzipDestination) As Boolean
     
     On Error GoTo errHandler
     
-    Dim FSO             As FileSystemObject
+    Dim fso             As New FileSystemObject
     Dim fldr            As Folder
-    Dim objZipApp       As Shell32.Shell
+    Dim objZipApp       As New Shell32.Shell
     
     Dim strFolderPath   As String
     Dim strFolderName   As String
     Dim strZipFolder    As String
-    
-    Set FSO = New FileSystemObject
-    Set objZipApp = New Shell
-    
-    strFolderPath = FSO.GetParentFolderName(strUnzipFullPath)
-    strFolderName = FSO.GetBaseName(strUnzipFullPath)
+        
+    strFolderPath = fso.GetParentFolderName(strUnzipFullPath)
+    strFolderName = fso.GetBaseName(strUnzipFullPath)
     
     '// TODO this needs to be a function!!!
     If Right(strFolderPath, Len(strFolderPath) - 1) <> Application.PathSeparator Then
@@ -69,11 +72,13 @@ Function windowsUnZip(strUnzipFullPath, strUnzipDestination) As Boolean
     strZipFolder = strFolderPath & strFolderName
     
     '// create folder of zip
-    If FSO.FolderExists(strZipFolder) = True Then
-        '// Do nothing
+    If fso.FolderExists(strZipFolder) = True Then
+        '// DELETE DELTE DELETE
+        Call fso.DeleteFolder(strZipFolder, True)
+        '// Make it again
+        Set fldr = fso.CreateFolder(strZipFolder)
     Else
-        '// or you can create it
-        Set fldr = FSO.CreateFolder(strZipFolder)
+        Set fldr = fso.CreateFolder(strZipFolder)
     
         If fldr Is Nothing Then
             MsgBox "Could not create the folder"
