@@ -28,7 +28,9 @@
 
 Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon, a pure VBA add-in for code export, no need to install a COM add-in
 
-Use this code so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
+Use this add-in so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
+
+Got code in your `Worksheet` and `ThisWorkbook` modules? No problem! CodeExport takes care of those too, exporting them as `*.sht` and `*.wbk` files :+1:
 
 This is specifically for Excel, although the VBIDE extensibility can be used for all the MS Office suite.
 
