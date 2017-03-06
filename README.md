@@ -13,7 +13,7 @@
   - [Installing](#installing)
   - [Usage](#usage)
     - [The configuration file](#the-configuration-file)
-    - [Importing & Exporting](#importing-exporting)
+    - [Importing & Exporting](#importing--exporting)
   - [Build from source](#build-from-source)
     - [Clone the repo](#clone-the-repo)
     - [Build the binary](#build-the-binary)
