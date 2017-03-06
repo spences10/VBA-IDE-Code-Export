@@ -90,7 +90,8 @@ Public Sub MakeConfigFile()
         If Not refReference.BuiltIn Then
             boolForbiddenRef = _
                 refReference.Name = "stdole" Or _
-                refReference.Name = "Office"
+                refReference.Name = "Office" Or _
+                refReference.Name = "MSForms"
             If Not boolForbiddenRef Then
                 Config.ReferencesUpdateFromVBRef refReference
             End If
