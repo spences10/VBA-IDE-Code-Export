@@ -25,9 +25,11 @@
 
 ## Intro
 
-Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon.
+Export your excel VBA project source code for use with Git (or any VCS) from the Excel Developer ribbon, a pure VBA add-in for code export, no need to install a COM add-in
 
-For a while now I have used this code so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
+Use this add-in so that all the associated VBA files used in a VBA project (*.cls, *.bas, *.frm files) can be effortlessly exported for use with a Version Control System.
+
+Got code in your `Worksheet` and `ThisWorkbook` modules? No problem! CodeExport takes care of those too, exporting them as `*.sht` and `*.wbk` files :+1:
 
 This is specifically for Excel, although the VBIDE extensibility can be used for all the MS Office suite.
 
@@ -133,13 +135,14 @@ Add in the following references:
 
 1. Microsoft Scripting Runtime
 2. Microsoft Visual Basic for Applications Extensibility 5.3
+3. Windows Script Host Object Model
+4. Microsoft Shell Controls And Automation
 
 Set the VBAProject name to `CodeExport`.
 
 Save, Debug>Compile the project then from the Immediate pane in the VBA IDE enter `auto_open` and hit return this should create the VBA IDE menu items, you're ready to move onto **usage.**
 
 ![](img/add-code.gif)
-
 
 ## Contributing
 
@@ -150,5 +153,5 @@ Any contributions, large or small, major features, bugfixes, integration tests a
 ## Roadmap
 
 - [x] Add pretty ribbon UI
-- [ ] Save XL as XML
+- [x] Save XL as XML
 - [ ] Command line interface
