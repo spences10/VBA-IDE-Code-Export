@@ -9,7 +9,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 Option Explicit
 
-' An inefficient evaluation of an element of the fibonacci sequence
+' An inefficient evaluation of an element of the Fibonacci sequence
 Public Function FibNumber(ByVal NumberIndex As Long)
     If NumberIndex <= 2 Then
         FibNumber = 1

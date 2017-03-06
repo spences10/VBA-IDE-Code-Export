@@ -9,7 +9,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 Option Explicit
 
-' My own made up PRNG (probably not a good one).
+' A made up PRNG (probably not a good one).
 Public Function PseudoRandomNumber(ByVal Seed As Double) As Double
     Seed = Seed - Int(Seed)
     Seed = 234945.3452 * Seed + 6352.5435

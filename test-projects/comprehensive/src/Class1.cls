@@ -14,18 +14,18 @@ Option Explicit
 ' program to work. The dictionary object is made available
 ' via the scripting library.
 
-Private Const KEY_MESSAGE As String = "Message"
-Private messageStorage As Dictionary
+Private Const KEY_MESSAGE       As String = "Message"
+Private dictMessageStorage      As Dictionary
 
 Public Property Get Message() As String
-    Message = messageStorage(KEY_MESSAGE)
+    Message = dictMessageStorage(KEY_MESSAGE)
 End Property
 
 Public Property Let Message(ByVal newMessage As String)
-    messageStorage(KEY_MESSAGE) = newMessage
+    dictMessageStorage(KEY_MESSAGE) = newMessage
 End Property
 
 Private Sub Class_Initialize()
-    Set messageStorage = New Dictionary
-    messageStorage(KEY_MESSAGE) = vbNullString
+    Set dictMessageStorage = New Dictionary
+    dictMessageStorage(KEY_MESSAGE) = vbNullString
 End Sub
