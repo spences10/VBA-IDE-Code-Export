@@ -153,5 +153,6 @@ Any contributions, large or small, major features, bugfixes, integration tests a
 ## Roadmap
 
 - [x] Add pretty ribbon UI
-- [x] Save XL as XML
+- [x] Export XL as XML
+- [ ] Import XL from XML
 - [ ] Command line interface
