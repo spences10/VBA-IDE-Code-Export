@@ -1,0 +1,20 @@
+{
+	"VBAProject Name": "ComprehensiveTest",
+	"Base Path": "src",
+	"Module Paths": {
+		"ThisWorkbook": "XlObjects\\ThisWorkbook.cls",
+		"Sheet1": "XlObjects\\Sheet1.cls",
+		"Module1": "..\\Module1.bas",
+		"Class1": "Class1.cls",
+		"UserForm1": "UsrFrm\\UserForm1.frm"
+	},
+	"References": [
+		{
+			"Name": "Scripting",
+			"Description": "Microsoft Scripting Runtime",
+			"GUID": "{420B2830-E718-11CF-893D-00A0C9054228}",
+			"Major": 1,
+			"Minor": 0
+		}
+	]
+}
