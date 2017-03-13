@@ -108,4 +108,7 @@ End Sub
 Public Sub btnXlToXML_onAction(control As IRibbonControl)
     Call excelToXML
 End Sub
+Public Sub btnXMLtoXL_onAction(control As IRibbonControl)
+    ' Call XMLtoExcel
+End Sub
 
