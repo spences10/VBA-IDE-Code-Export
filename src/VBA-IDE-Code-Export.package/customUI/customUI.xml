@@ -9,6 +9,7 @@
 					<button description="Import code" id="btnImport" imageMso="ImportTextFile" label="Import Code" size="large" onAction="btnImport_onAction"/>
 					<separator id="Separator1" />
 					<button description="Excel to XML" id="btnXlToXML" imageMso="ExportSharePointList" label="Excel to XML" size="large" onAction="btnXlToXML_onAction"/>
+					<button description="XML to Excel" id="btnXMLtoXL" imageMso="ImportSharePointList" label="XML to Excel" size="large" onAction="btnXMLtoXL_onAction"/>
 				</group >
 			</tab >
 		</tabs >
