@@ -6,7 +6,8 @@
 		"JsonConverter": "JsonConverter.bas",
 		"modImportExport": "modImportExport.bas",
 		"modMenu": "modMenu.bas",
-		"modUtil": "modUtil.bas"
+		"modUtil": "modUtil.bas",
+		"modExcelToXML": "modExcelToXML.bas"
 	},
 	"References": [
 		{
@@ -22,6 +23,20 @@
 			"GUID": "{0002E157-0000-0000-C000-000000000046}",
 			"Major": 5,
 			"Minor": 3
+		},
+		{
+			"Name": "Shell32",
+			"Description": "Microsoft Shell Controls And Automation",
+			"GUID": "{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}",
+			"Major": 1,
+			"Minor": 0
+		},
+		{
+			"Name": "IWshRuntimeLibrary",
+			"Description": "Windows Script Host Object Model",
+			"GUID": "{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}",
+			"Major": 1,
+			"Minor": 0
 		}
 	]
 }
