@@ -1,5 +1,5 @@
-#define VERSION "0.2.0"              ; The version number
-#define LONGVERSION "0.2.0"          ; The version in four-number format
+#define VERSION "0.3.0"              ; The version number
+#define LONGVERSION "0.3.0"          ; The version in four-number format
 #define YEARSPAN "2016-2017"         ; The year(s) of publication
                                      ; (e.g., 2014-2015)
 #define PRODUCT "VBA IDE Code Export"
@@ -8,7 +8,7 @@
 #define SOURCEDIR "src"              ; The folder with the addin files
                                      ; (relative path)
 
-#define LOGFILE "INST-LOG.TXT"       ; The name of the log file. 
+#define LOGFILE "INST-LOG.TXT"       ; The name of the log file.
 
 AppPublisherURL=https://github.com/spences10/VBA-IDE-Code-Export
 AppSupportURL=https://github.com/spences10/VBA-IDE-Code-Export/issues
@@ -41,4 +41,4 @@ LicenseFile=LICENSE
 ; Never change this UID after the addin has been deployed.
 AppId={{4ED72357-D953-4156-9F26-1CA15F055161}}
 
-; vim: set ts=2 sts=2 sw=2 noet tw=60 fo+=lj cms=;%s 
+; vim: set ts=2 sts=2 sw=2 noet tw=60 fo+=lj cms=;%s
