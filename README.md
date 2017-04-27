@@ -1,8 +1,10 @@
 # VBA IDE CodeExport
 
-[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/VBA-IDE-Code-Export)
-[![Stories in Ready](https://badge.waffle.io/spences10/VBA-IDE-Code-Export.png?label=ready&title=Ready)](https://waffle.io/spences10/VBA-IDE-Code-Export)
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)  [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/VBA-IDE-Code-Export)
+
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/spences10/VBA-IDE-Code-Export.svg)](http://isitmaintained.com/project/spences10/VBA-IDE-Code-Export "Average time to resolve an issue")  [![Percentage of issues still open](http://isitmaintained.com/badge/open/spences10/VBA-IDE-Code-Export.svg)](http://isitmaintained.com/project/spences10/VBA-IDE-Code-Export "Percentage of issues still open")
+
+[![Stories in Ready](https://badge.waffle.io/spences10/VBA-IDE-Code-Export.png?label=ready&title=Ready)](https://waffle.io/spences10/VBA-IDE-Code-Export)  
 
 [![Throughput Graph](https://graphs.waffle.io/spences10/VBA-IDE-Code-Export/throughput.svg)](https://waffle.io/spences10/VBA-IDE-Code-Export/metrics/throughput)
 
