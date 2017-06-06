@@ -4,7 +4,7 @@
 
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/spences10/VBA-IDE-Code-Export.svg)](http://isitmaintained.com/project/spences10/VBA-IDE-Code-Export "Average time to resolve an issue")  [![Percentage of issues still open](http://isitmaintained.com/badge/open/spences10/VBA-IDE-Code-Export.svg)](http://isitmaintained.com/project/spences10/VBA-IDE-Code-Export "Percentage of issues still open")
 
-[![Stories in Ready](https://badge.waffle.io/spences10/VBA-IDE-Code-Export.png?label=ready&title=Ready)](https://waffle.io/spences10/VBA-IDE-Code-Export)  
+[![Stories in Ready](https://badge.waffle.io/spences10/VBA-IDE-Code-Export.png?label=ready&title=Ready)](https://waffle.io/spences10/VBA-IDE-Code-Export) [![Code Triagers Badge](https://www.codetriage.com/spences10/vba-ide-code-export/badges/users.svg)](https://www.codetriage.com/spences10/vba-ide-code-export)
 
 [![Throughput Graph](https://graphs.waffle.io/spences10/VBA-IDE-Code-Export/throughput.svg)](https://waffle.io/spences10/VBA-IDE-Code-Export/metrics/throughput)
 
