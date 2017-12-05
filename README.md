@@ -6,8 +6,6 @@
 
 [![Stories in Ready](https://badge.waffle.io/spences10/VBA-IDE-Code-Export.png?label=ready&title=Ready)](https://waffle.io/spences10/VBA-IDE-Code-Export) [![Code Triagers Badge](https://www.codetriage.com/spences10/vba-ide-code-export/badges/users.svg)](https://www.codetriage.com/spences10/vba-ide-code-export)
 
-[![Throughput Graph](https://graphs.waffle.io/spences10/VBA-IDE-Code-Export/throughput.svg)](https://waffle.io/spences10/VBA-IDE-Code-Export/metrics/throughput)
-
 <!-- TOC -->
 
 - [VBA IDE CodeExport](#vba-ide-codeexport)
